@@ -1,6 +1,6 @@
 # QSPermissionUtil
 Android Permission Util 安卓权限申请工具类
-## Copy and paste just do it 复制粘贴就是干
+## Copy and paste just do it! 复制粘贴就是干!
 ```
     PermissionUtil.requestPermission(this, new PermissionUtil.PermissionListener() {
         @Override

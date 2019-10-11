@@ -20,5 +20,5 @@ Android Permission Util 安卓权限申请工具类
   requestRationalePermission() 被拒一次后会先弹出提示框,再申请权限
   hasPermission() 判断权限
   isRationalePermission() 是否被拒绝了一次了
-  isAlwaysDeniedPermission() 是否永远拒绝了,需要在onPermissionFailed里调用
+  isAlwaysDeniedPermission() 是否永远拒绝了,需要在onPermissionFailed里调用,再弹出系统设置框showSettingDialog()
 ```

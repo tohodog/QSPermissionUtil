@@ -46,7 +46,8 @@ public class QSPermissionUtil {
 
     public static void requestPermission(Activity activity, int requestCode, PermissionListener permissionListener, String... permissions) {
         if (Build.VERSION.SDK_INT < 23) {
-            permissionListener.onPermissionSucceed(requestCode, Arrays.asList(permissions));
+            if (permissionListener != null)
+                permissionListener.onPermissionSucceed(requestCode, Arrays.asList(permissions));
         } else {
             try {
                 //利用Fragment申请权限,不用开发者处理onRequestPermissionsResult了

@@ -10,7 +10,9 @@ Android Permission Util 安卓权限申请工具类
 
         @Override
         public void onPermissionFailed(int requestCode, List<String> deniedList) {
-
+            if (QSPermissionUtil.isAlwaysDeniedPermission(MainActivity.this, deniedList)) {
+                QSPermissionUtil.showSettingDialog(MainActivity.this);
+            }
         }
     }, PermissionUtil.SDCARD);
 ```
